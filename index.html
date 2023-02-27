@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2? família=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Conversor de Money</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1> Ronaldo Convert Money</h1>
+      </header>
+
+      <main>
+        <label>
+          Converter <b>de</b>
+          <select>
+            <option>R$ <b>Real Brasileiro</b></option>
+          </select>
+        </label>
+        <label>
+          Converter <b>para</b>
+          <select id="currency-select">
+            <option>
+             US$ Dólar americano
+            </option>
+            <option>
+                € Euro
+            </option>
+            <option> 
+                ₿ Bitcoin
+            </option>
+          </select>
+        </label>
+        <label>
+          Valor
+          <input id="input-real" placeholder="R$ 10.000,00" />
+        </label>
+
+        <button id="convert-button" type="button">Converter</button>
+
+        <section>
+          <div class="containerCurrency">
+            <img
+              src="./img/brasil 2.svg"
+              alt="imagem da bandeira do Brasil"
+            />
+            <p class="currencyName">Real</p>
+            <p class="valueCurrency" id="real-value-text">R$ 10.000,00</p>
+          </div>
+
+          <img class="arrow" src="./img/seta.png" alt="seta" />
+
+          <div class="containerCurrency">
+            <img
+              src="./img/estados-unidos (1) 1.svg"
+              alt="imagem da bandeira do EUA"
+              id="img-currency"
+            />
+            <p class="currencyName" id="currency-name">Dólar americano</p>
+            <p class="valueCurrency" id="currency-value-text">R$ 2.000,00</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
